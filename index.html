@@ -1,71 +1,60 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio - Juan Felipe Venegas Suarez</title>
+    <title>Portafolio - Juan Felipe Venegas</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
 </head>
 <body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#about">Sobre mí</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
+    <!-- Header -->
     <header>
-        <img src="assets/perfil.jpeg" alt="Juan Felipe Venegas Suarez" class="perfil">
+        <img src="assets/perfil.jpg" alt="Juan Felipe Venegas Suarez" class="perfil">
         <h1>¡Hola! Soy Juan Felipe Venegas Suarez</h1>
         <p>Desarrollador de Software Full Stack</p>
     </header>
-    
-    <section>
+
+    <!-- Sobre mí -->
+    <section id="about">
         <h2>Sobre mí</h2>
-        <p>Desarrollador de Software Full Stack con más de 7 años de experiencia liderando proyectos de desarrollo web y creando soluciones tecnológicas innovadoras. Experto en metodologías ágiles (SCRUM), diseño de bases de datos eficientes y desarrollo de servicios web (SOAP, REST). Apasionado por la resolución de problemas complejos, la optimización de rendimiento y la implementación de prácticas seguras de codificación. Capacidad comprobada para trabajar en equipo, adaptarse a entornos dinámicos y cumplir objetivos empresariales bajo presión.</p>
+        <p>Desarrollador de Software Full Stack con más de 7 años de experiencia...</p>
     </section>
-    
-    <section>
-        <h2>Experiencia</h2>
-        <p><strong>Desarrollador - Servisoft (Septiembre 2018 - Presente)</strong></p>
-        <ul>
-            <li>Lideré equipos de desarrollo utilizando metodologías ágiles (SCRUM), entregando proyectos clave hasta un 20% antes de lo planificado.</li>
-            <li>Desarrollé soluciones personalizadas para clientes, optimizando la funcionalidad y rendimiento de aplicaciones web.</li>
-            <li>Diseñé e implementé bases de datos eficientes, reduciendo tiempos de consulta en un 15%.</li>
-            <li>Creé y consumí servicios web (SOAP, REST) para integrar sistemas internos y externos.</li>
-            <li>Realicé revisiones de seguridad utilizando herramientas como SonarQube, mejorando la robustez del código en un 25%.</li>
-            <li>Creé un sistema con conexión a una base de datos no relacional usando Flutter y diversas librerías para integración con otros sistemas.</li>
-        </ul>
+
+    <!-- Habilidades -->
+    <section id="skills">
+        <h2>Habilidades</h2>
+        <div class="skills">
+            <div class="skill-box">JavaScript</div>
+            <div class="skill-box">React</div>
+            <div class="skill-box">Node.js</div>
+            <div class="skill-box">Spring Boot</div>
+        </div>
     </section>
-    
-    <section>
-        <h2>Educación</h2>
-        <ul>
-            <li><strong>Técnico en Programación de Software</strong> - SENA (2016 - 2017)</li>
-            <li><strong>Tecnólogo en Análisis y Desarrollo en Sistemas de Información</strong> - SENA (2018 - 2021)</li>
-            <li><strong>Ingeniería en Desarrollo de Software</strong> - Fundación Universitaria Ucompensar (Cursando 9º semestre - 2023 - Actualidad)</li>
-        </ul>
-    </section>
-    
-    <section>
-        <h2>Habilidades Técnicas</h2>
-        <ul>
-            <li>Lenguajes de programación: Python, JavaScript, Java, SQL</li>
-            <li>Frameworks y tecnologías: Angular, Spring, Node.js, React</li>
-            <li>Bases de datos: MySQL, PostgreSQL, Oracle Database, Firebase</li>
-            <li>Herramientas de desarrollo: Git, Docker, AWS (EC2)</li>
-            <li>Seguridad: Pruebas de Seguridad, manejo de vulnerabilidades (SQL injection, scripting)</li>
-            <li>Creación de apps con Flutter y Dart</li>
-        </ul>
-    </section>
-    
-    <section>
+
+    <!-- Proyectos -->
+    <section id="projects">
         <h2>Proyectos</h2>
         <div class="projects">
             <div class="project-card">
                 <h3>Camivets</h3>
-                <p>Aplicación móvil desarrollada en Java con Android Studio, integrada con Firebase para almacenamiento de datos.</p>
+                <p>Aplicación móvil desarrollada en Java con Android Studio...</p>
                 <a href="https://github.com/G14Retro/Camivets_1.0.git" target="_blank">Ver en GitHub</a>
             </div>
         </div>
     </section>
-    
-    <section>
+
+    <!-- Contacto -->
+    <section id="contact" class="contacto">
         <h2>Contacto</h2>
         <p><i class="fa-solid fa-envelope icon"></i>Email: <a href="mailto:juanfeven99@live.com">juanfeven99@live.com</a></p>
         <p><i class="fa-solid fa-phone icon"></i>Teléfono: (+57) 314 428 7244</p>
@@ -73,7 +62,6 @@
         <p><i class="fa-brands fa-gitlab icon"></i>GitLab: <a href="https://gitlab.com/Felipevenegas" target="_blank">Felipevenegas</a></p>
         <p><i class="fa-brands fa-linkedin icon"></i>LinkedIn: <a href="https://www.linkedin.com/in/juan-felipe-venegas-suarez-175b03191" target="_blank">Juan Felipe Venegas Suarez</a></p>
     </section>
-    
-    <script src="script.js"></script>
+
 </body>
 </html>
