@@ -1,13 +1,14 @@
-document.addEventListener("DOMContentLoaded", function () {
-    console.log("Portafolio actualizado correctamente.");
+document.querySelectorAll('.navbar a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
 
-    let projects = document.querySelectorAll(".project-card");
-    projects.forEach(card => {
-        card.addEventListener("mouseenter", () => {
-            card.style.boxShadow = "5px 5px 15px rgba(255, 255, 255, 0.2)";
-        });
-        card.addEventListener("mouseleave", () => {
-            card.style.boxShadow = "2px 2px 10px rgba(0, 0, 0, 0.1)";
-        });
+        if (targetSection) {
+            window.scrollTo({
+                top: targetSection.offsetTop - 60,
+                behavior: "smooth"
+            });
+        }
     });
 });
