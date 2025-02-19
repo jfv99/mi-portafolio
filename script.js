@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    console.log("Portafolio cargado correctamente.");
-    
+    console.log("Portafolio actualizado correctamente.");
+
     let projects = document.querySelectorAll(".project-card");
     projects.forEach(card => {
         card.addEventListener("mouseenter", () => {
